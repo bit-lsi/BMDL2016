@@ -27,3 +27,11 @@
 ## Python Packages
 
 - [NetworkX](https://networkx.readthedocs.io/en/stable/) 
+- [Pandas](http://pandas.pydata.org/pandas-docs/stable/)
+- [Numpy](http://docs.scipy.org/doc/)
+- [Scikit-Learn](http://scikit-learn.org/stable/)
+
+### SQL Connectors
+
+- [Psycopg2](http://initd.org/psycopg/docs/)
+- [PyMySQL](http://pymysql.readthedocs.io/en/latest/)
