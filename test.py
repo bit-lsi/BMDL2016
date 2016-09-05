@@ -6,6 +6,9 @@ import sys
 import json
 import logging
 import pymysql
+import psycopg2
+import json
+
 
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
@@ -13,6 +16,7 @@ log.setLevel(logging.INFO)
 log.warn(sys.version)
 
 reqs = ["numpy", "pandas", "networkx", "sklearn", "pymysql"]
+
 
 for req in reqs:
     try:
