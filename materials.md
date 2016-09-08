@@ -26,7 +26,7 @@
 
 ## Python Packages
 
-- NumPy
+- NumPy and SciPy
   - [Documentation](http://docs.scipy.org/doc/)
   - [Quick Start](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
 - Pandas
@@ -39,6 +39,9 @@
 - NetworkX
   - [Documentation](https://networkx.readthedocs.io/en/stable/) 
   - [Tutorial](https://networkx.github.io/documentation/networkx-1.10/tutorial/tutorial.html)
+- Matplotlib
+  - [Introduction](http://matplotlib.org/)
+  - [Documentation](http://matplotlib.org/contents.html)
 
 ### SQL Connectors
 
