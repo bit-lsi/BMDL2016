@@ -8,31 +8,45 @@ import logging
 import pymysql
 import psycopg2
 import json
+import os
+import unittest
+import importlib
+
+log = logging.getLogger()
+
+reqs = "numpy", "scipy", "pandas", "networkx", "sklearn", "pymysql", 'requests', 'matplotlib'
+BASE = "BUG_FREE_EUREKA_BASE"
+
+class TestBugFreeEureka(unittest.TestCase):
+    def test_reqs(self):
+        for req in reqs:
+            try:
+                importlib.import_module(req)
+            except Exception as e:
+                print("Unable to import {}\n  Run: pip3 install {}".format(req, req))
+            else:
+                print("Successfully imported {}".format(req))
 
 
-log = logging.getLogger(__name__)
-log.setLevel(logging.INFO)
+    def test_secrets(self):
+        if not os.path.exists('secrets.json'):
+            print('./secrets.json not found')
+    
 
-log.warn(sys.version)
+    def test_db(self):
+        with open("secrets.json") as f:
+            secrets = json.load(f)
 
-reqs = ["numpy", "pandas", "networkx", "sklearn", "pymysql"]
+        connection_params = secrets["test_db"]
 
+        with pymysql.connect(**connection_params) as cursor:
+            print('Successfully connected to database {}'.format(connection_params))
+            cursor.execute("select 'Successfully queried database'")
+            print(*cursor.fetchone())
 
-for req in reqs:
-    try:
-        __import__(req)
-    except Exception as e:
-        print("failure: {}".format(e))
-    else:
-        print("successfully imported {}".format(req))
+    def test_env(self):
+        if BASE not in os.environ:
+            print("{} not on PATH".format(BASE))
 
-with open("secrets.json") as f:
-    secrets = json.load(f)
-
-connection_params = secrets["test_db"]
-
-with pymysql.connect(**connection_params) as cursor:
-    cursor.execute("select 'successfully connected to/queried database'")
-    res = cursor.fetchone()
-    for col in res:
-        print(col)
+if __name__ == '__main__':
+    unittest.main()
