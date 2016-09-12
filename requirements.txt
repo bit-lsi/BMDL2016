@@ -1,0 +1,7 @@
+nbstripout
+matplotlib
+numpy
+scipy
+networkx
+pymysql
+pandas
