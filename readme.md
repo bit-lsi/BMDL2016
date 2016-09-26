@@ -38,10 +38,6 @@ Landing repo for database optimization and design class
 - Pandas
   - [Documentation](http://pandas.pydata.org/pandas-docs/stable/)
   - [10 Minutes to Pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)
-- Scikit-Learn
-  - [Documentation](http://scikit-learn.org/stable/)
-  - [All Tutorials](http://scikit-learn.org/stable/tutorial/)
-  - [Supervised Learning Tutorial](http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html)
 - NetworkX
   - [Documentation](https://networkx.readthedocs.io/en/stable/) 
   - [Tutorial](https://networkx.github.io/documentation/networkx-1.10/tutorial/tutorial.html)
@@ -51,5 +47,16 @@ Landing repo for database optimization and design class
 
 ### SQL Connectors
 
-- [Psycopg2](http://initd.org/psycopg/docs/)
+- SQLite3
+    - [Download](https://www.sqlite.org/download.html)
+    - [CLI Tutorial](https://www.sqlite.org/cli.html)
+    - [Python Connector](https://docs.python.org/3.5/library/sqlite3.html)
 - [PyMySQL](http://pymysql.readthedocs.io/en/latest/)
+
+
+### Extras
+
+- Scikit-Learn
+  - [Documentation](http://scikit-learn.org/stable/)
+  - [All Tutorials](http://scikit-learn.org/stable/tutorial/)
+  - [Supervised Learning Tutorial](http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html)
