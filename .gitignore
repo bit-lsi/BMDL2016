@@ -1,2 +1,4 @@
 secrets.json
 .pydevproject
+.ipynb_checkpoints/*
+review/.ipynb_checkpoints/*
