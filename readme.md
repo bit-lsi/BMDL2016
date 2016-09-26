@@ -26,6 +26,10 @@ Landing repo for database optimization and design class
   - Modeling of Biological Systems [slides](https://raw.githubusercontent.com/bit-lsi/bug-free-eureka/resources/ModelingOfBiologicalSystems.pdf)
   - Bayesian Networks in Computational Life Sciences [slides](https://raw.githubusercontent.com/bit-lsi/bug-free-eureka/resources/BayesianNetworksInComputationalLifeScience.pdf)
 
+## Useful Links
+
+- Markdown [tutorial](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
 ## Python Packages
 
 - NumPy and SciPy
