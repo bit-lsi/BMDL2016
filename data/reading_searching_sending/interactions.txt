@@ -1,0 +1,2 @@
+p(HGNC:CYCS) -> act(p(HGNC:CASP9))
+p(HGNC:BCL2) -| p(HGNC:CYCS)
