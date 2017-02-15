@@ -1,6 +1,8 @@
-# bug-free-eureka
+# Biomedical Databases Lab 2016
 
 Landing repo for database optimization and design class
+
+**Instructors**: Christian Ebeling, Charles Tapley Hoyt, Nanditha Mallesh, Andrej Konotopez
 
 ## Papers
 
